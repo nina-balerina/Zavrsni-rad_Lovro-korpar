@@ -1,0 +1,21 @@
+\babel@toc {croatian}{}\relax 
+\contentsline {chapter}{Popis slika}{v}{chapter*.1}%
+\contentsline {chapter}{Popis tablica}{vii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Potresi i njihovi utjecaj na gra\DJ evine}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Zemlja i tektonika}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Potresi - uzrok i odziv}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Vrste seizmičkih valova}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Magnituda i intenzitet potresa}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Utjecaj potresa na građevine}{6}{section.2.5}%
+\contentsline {chapter}{\numberline {3}JednadŽba kretanja}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Opis opreme i jednokatnog okvira}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Laboratorijska oprema}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Optički mjerni sustav GOM mbH PONTOS 3D 4M}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Sustav od dvije dvoosne potresne platforme Quanser STI-III}{18}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Jednokatni okvir}{19}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Laboratorijska ispitivanja i njihvi rezultati}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Rezultati ispitivanja}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ispitivanje slobodnih oscilacija}{23}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Okvir bez dodane mase}{23}{subsection.5.2.1}%
+\contentsline {chapter}{\textbf {Literatura}}{25}{section*.16}%
