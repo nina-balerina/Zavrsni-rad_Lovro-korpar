@@ -5,11 +5,13 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Oluić(2015)]{oluic2015}
-Oluić, Marinko.
-\newblock \emph{Potresi : uzroci nastanka i posljedice : s posebnim osvrtom na
-  Hrvatsku i susjedna područja}.
-\newblock Prosvjeta, 2015.
-\newblock ISBN 978-953-7130-98-5.
+\bibitem[Chopra(2007)]{chopra2007}
+Chopra, Anil~K.
+\newblock \emph{Dynamics of structures : theory and applications to earthquake
+  engineering}.
+\newblock [Pearson Education India], 2007.
+\newblock ISBN 8131713296.
+\newblock URL
+  \url{https://books.google.com/books/about/Dynamics_of_Structures.html?id=0dU1bDaRyP4C}.
 
 \end{thebibliography}

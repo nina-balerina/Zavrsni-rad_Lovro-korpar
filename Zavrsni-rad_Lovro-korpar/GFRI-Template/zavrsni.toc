@@ -1,4 +1,4 @@
-\babel@toc {croatian}{}\relax 
+\babel@toc {croatian}{}
 \contentsline {chapter}{Popis slika}{v}{chapter*.1}%
 \contentsline {chapter}{Popis tablica}{vii}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
@@ -11,7 +11,7 @@
 \contentsline {chapter}{\numberline {3}JednadŽba kretanja}{13}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Opis opreme i jednokatnog okvira}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Laboratorijska oprema}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Optički mjerni sustav GOM mbH PONTOS 3D 4M}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}Opti\v cki mjerni sustav GOM mbH PONTOS 3D 4M}{17}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Sustav od dvije dvoosne potresne platforme Quanser STI-III}{18}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Jednokatni okvir}{19}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Laboratorijska ispitivanja i njihvi rezultati}{23}{chapter.5}%
