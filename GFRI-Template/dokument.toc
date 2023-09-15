@@ -1,4 +1,4 @@
-\babel@toc {croatian}{}
+\babel@toc {croatian}{}\relax 
 \contentsline {chapter}{Popis slika}{iii}{chapter*.1}%
 \contentsline {chapter}{Popis tablica}{v}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}\uppercase {rand}}{1}{chapter.1}%

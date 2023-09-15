@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: zavrsni.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+The style file: unsrtnat-GFRI.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Illegal, another \bibstyle command---line 191 of file zavrsni.aux
+ : \bibstyle
+ :          {vancouver}
+I'm skipping whatever remains of this command
+Database file #1: literatura1.bib
+Warning--entry type for "imperial_county_slika" isn't style-file defined
+--line 1 of file literatura1.bib
+Warning--entry type for "richterova_slika" isn't style-file defined
+--line 16 of file literatura1.bib
+Warning--entry type for "tektonske" isn't style-file defined
+--line 21 of file literatura1.bib
+Warning--entry type for "cape_mendocino" isn't style-file defined
+--line 31 of file literatura1.bib
+Warning--entry type for "valley_report" isn't style-file defined
+--line 37 of file literatura1.bib
+Warning--entry type for "britannica_kobe" isn't style-file defined
+--line 43 of file literatura1.bib
+Warning--entry type for "britannica_northridge" isn't style-file defined
+--line 53 of file literatura1.bib
+Warning--entry type for "dinamika_ZG" isn't style-file defined
+--line 59 of file literatura1.bib
+Warning--entry type for "jagodnik_potresi" isn't style-file defined
+--line 67 of file literatura1.bib
+Warning--entry type for "richterova_vjesnik" isn't style-file defined
+--line 75 of file literatura1.bib
+Warning--empty publisher in herak1984
+Warning--empty year in tektonske
+Warning--empty year in richterova_slika
+Warning--empty publisher in hrasnica2005
+Warning--empty journal in northridge_slika
+Warning--empty year in northridge_slika
+Warning--empty year in northridge_slika
+Warning--empty journal in Cape_mandocino_slika
+Warning--empty year in Cape_mandocino_slika
+Warning--empty year in Cape_mandocino_slika
+You've used 16 entries,
+            2481 wiz_defined-function locations,
+            624 strings with 6762 characters,
+and the built_in function-call counts, 4300 in all, are:
+= -- 344
+> -- 140
+< -- 14
++ -- 72
+- -- 40
+* -- 220
+:= -- 675
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 28
+chr.to.int$ -- 16
+cite$ -- 26
+duplicate$ -- 252
+empty$ -- 477
+format.name$ -- 56
+if$ -- 923
+int.to.chr$ -- 1
+int.to.str$ -- 17
+missing$ -- 10
+newline$ -- 88
+num.names$ -- 48
+pop$ -- 196
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 178
+stack$ -- 0
+substring$ -- 32
+swap$ -- 31
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 100
+warning$ -- 10
+while$ -- 32
+width$ -- 0
+write$ -- 193
+(There was 1 error message)

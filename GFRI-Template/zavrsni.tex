@@ -1,0 +1,828 @@
+%%%%%%%%%%%%  Generated using docx2latex.com  %%%%%%%%%%%%%%
+
+%%%%%%%%%%%%  v2.0.0-beta  %%%%%%%%%%%%%%
+
+\documentclass[12pt]{book}
+
+\input{./struktura.tex}
+
+\onehalfspacing
+
+\begin{document}
+
+%\input{./naslovnica2}
+\input{./naslovnica}
+
+\pagestyle{empty}
+\input{./Poglavlja/zahvale}
+
+\cleardoublepage
+\begin{flushleft}
+	
+\end{flushleft}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\tableofcontents
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{\listfigurename}\listoffigures
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listtablename}\listoftables
+
+
+\clearpage
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+\setcounter{page}{1}
+
+\chapter{\uppercase{Uvod}}
+Potres je iznenadna prirodna pojava kratkotrajnih vibracija površine Zemlje. Izazvana je spontanim i naglim oslobađanjem energije uslijed pokreta pojedinih dijelova Zemljine kore duž rasjeda. Istraživanjem potresa, odnosno seizmičkih valova bavi se geofizička disciplina seizmologija. Danas poznajemo razne vrste potresa, ali kao glavnim i najučestalijim potresima smatramo one koji su nastali kao posljedica tektonskih poremećaja koji izazivaju pucanje i vibracije na površini Zemlje kao i na objektima. Nažalost, u zadnjih par godina desilo se puno jako razornih potresa u Republici Hrvatskoj isto kao i u drugim državama. Uzimajući to u obzir inženjeri građevine sve više proučavaju potrese i njihov utjecaj na građevine. Jedna od stvari koja im jako pomaže u tome su laboratorijska ispitivanja.
+
+Za istraživanje novih solucija koje bi pomogle u tome, provode se laboratorijska ispitivanja. U laboratorijskim ispitivanjima koriste se posebni modeli koji imitiraju konstrukciju pri pobudi potresa. Ti modeli mogu se modificirati na različite načine kako bi što bolje pomogli u istraživanjima. Na primjer na modelima mogu se koristiti ploče različitih krutosti, na njih se mogu dodavati različiti damperi kojima se konstrukcija dodatno osigurava od potresa i tako dalje.  
+
+U ovom završnom radu proučavati će se promjena mase jednokatnog okvira na dinamički odgovor na pobudu podloge. Promjena širine krute ploče ipak se neće promatrati zato što dimenzije konstrukcije zapravo ne doprinose ničemu što će se proučavati, doprinosi samo promjena mase koja će se ostvariti dodavanjem utega na jednokatni okvir. Isto tako uz laboratorijska ispitivanja sve stvari koje nas zanimaju biti će popračene proračunom, te objašnjenjima.
+
+\chapter{\uppercase{Potresu u njihovi utjecaju na gra{\DJ}evine}}
+Zemlja se povremeno potresa u obliku brzo izmjenjenih vibracija litosfere koje uzrokuju valovi koji prenose energiju u svim smjerovima iz nekog podzemnog žarišta (epicentra). Potrese, njihova žarišta, smjerove, vrijeme trajanja i jačinu ne možemo predvidjeti. Ali kao pomoć razumijevanju potresa služe nam seizmološke stanice na kojima se svake godine zabilježi preko 1 milijun potresa diljem svijeta. Svi zabilježeni potresi su nam bitni, ali najbitniji su nam oni u naseljenim područjima. Kod potresa u naseljenim područjima možemo vidjeti odzive konstrukcija, te u većini slučajeva nažalost i razaranja. Te stvari nam pomažu u budućem projektiranju konstrukcija i njihovom poboljšavanju. \cite{herak1984}
+
+\section{Zemlja i tektonika}
+
+Da bismo razumjeli gdje i kako potresi nastaju, prvo trebamo znati par stvari o Zemlji i njenoj unutrašnjosti. Zemlju po dubini možemo podijeliti na tri glavna dijela, a to su Zemljina kora, Zemljin plašt i Zemljina jezgra. Zemljina kora i gornji dio plašta tvore litosfetu. Litosfera je kompliciran sustav jer se sastoji od više različitih materijala. Brzina širenja seizmičkih valova jako ovisi o materijalu kroz koji oni prolaze u litosferi. Ispod litosfere nalazi se astenosfera koja je sastavljena od težih i gušćih stijena od onih koje izgrađuju Zemljinu koru. Samim time brzina širenja seizmičkih valova u astenosferi brža je nego u litosfeti. Prijelaz između litosfere i astenosfere naziva se Mohorovičićev diskontinuitet. Ime je dobio po hrvatskom geofizičaru Andriji Mohorovičiću koji ga je prvi otkrio. Mohorovičićev diskontinuitet je zapravo ploha na kojoj dolazi do nagle promjene, tj. smanjenja brzine svih seizmičkih valova.
+Na još većoj dubini u površini Zemlje nalaze se gornji plašt (dubina oko 670 km), te donji plašt (dubina oko 2900 km), no oni nisu toliko bitni za istraživanje seizmičkih valova, zato što potresi nastaju na maksimalnoj dubini od oko 700 km. \cite{herak1984} \cite{oluic2015}
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"Slike/presjek zemlje"}
+	\caption{Presjek Zemlje i konvekcijska strujanja u plaštu \cite{oluic2015}}
+	\label{fig:presjek-zemlje}
+\end{figure}
+
+Tektonika je znanost o prostornom oblikovanju ili građi zemljine kore. Seizmolozi smatraju tektoniku jako bitnom za istraživanje potresa jer se najveći broj potresa dešava upravo pomicanjem tektonskih ploča.
+
+
+Tektonika ploča znanstvena je teorija koja opisuje kretanje tektonskih ploča. Teorija tumači da Zemljina kora zajedno s gornjim plaštom pluta po polutekućoj astenosferi. No, s obzirom da Zemljina kora nije homogena ona se tim pomicanjem razdvaja u više manjih ili većih tektonskih ploča razdijeljenih rasjedima ili granicama. \cite{oluic2015}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"C:/Users/Lovro Korpar/Desktop/tektosnke"}
+	\caption{Granice tektonskih ploča \cite{tektonske}}
+	\label{fig:tektosnke}
+\end{figure}
+
+
+Rasjede možemo podijeliti u tri kategorije:
+
+- granice razmicanja ploča
+
+- granice podvlačenja ploča
+
+- transformni ili horizontalni rasjedi
+
+Samim pomicanjem tektonskih ploča po različitim vrstama rasjeda nastaju potresi. \cite{oluic2015}
+
+\section{Potresi - uzrok i odziv}
+
+Kao što je već navedeno u uvodu ovog poglavlja, potresi su posljedica podrhtavanja Zemlje.  Uzrok tim potresima su poremećaji u litosferi, koji su izazvani magmatskom aktivnošću, urušavanjem ili tektonskim poremećajima. Potresi nastali magmatskom aktivnošću i urušavanjem nas ne zanimaju, zato što su njihova djelovanja jako mala i zanemariva za građevine. Najviše nas zanimaju tektonski potresi. Oni nastaju u žarištu, odakle se oslobađa seizmička energija te se u obliku valova širi u svim smjerovima. Tektonski potresi su zapravo vezani uz određene tektonske linije u litosferi i nastaju kao posljedica mehaničkih slomova stijena, te njihovih pomaka duž rasjeda. Ovisno o dubini žarišta oni mogu biti plitki (dubina do 70 km), srednji (dubina od 70 km do 350 km), te duboki (dubina od 350 do 700 km). Mjesto na površini neposredno iznad žarišta naziva se epicentar. Tu su posljedice potresa najintenzivnije, te najčešće najrazornije za građevine. 
+
+Seizmologija je znanost koja se bavi istraživanjem seizmičkih valova, te samim time i cijelom potresnom aktivnošću. Instrument kojim se mjeri potresanje površina naziva se seizmograf. Rezultati mjerenja zapisuju se na seizmogramu. U Hrvatskoj postoji više seizmoloških postaja na kojima se izdaju zapisi o potresima i na kojima se prati potresna aktivnost. Preko tih postaja, građane se obavještava o jačini i vremenu trajanja potresa, isto tako seizmološke postaje su jako bitne za građevinare, zato što preko njih dobivamo sve željene i detaljne informacije o potresima. \cite{herak1984} \cite{oluic2015} \cite{jagodnik_potresi}
+
+\section{Vrste seizmičkih valova}
+
+Potresi se prenašaju seizmičkim valovima koje dijelimo na:
+
+- prostorne seizmičke valove
+
+- površinske seizmičke valove
+
+Prostorne seizmičke valove dijelimo na Primarne (P) valove i Sekundarne (S) valove. Oni se iz žarišta potresa šire u svim smjerovima kroz zemljinu unutrašnjost. 
+
+P valovi su valovi koji se najbrše šire kroz unutrašnjost Zemlje, te prvi dolaze do seizmoloških postaja. Razlog tome je što se oni gibaju longitudalno, ali bez obzira na veliku brzinu, oni ne uzrokuju velike štete. 
+
+S valovi su valovi koji se sporije šire kroz unutrašnjost Zemlje, te samim time i kasnije dolaze do seizmičkih postaja. Gibaju se sporije jer se šire transverzalno, te kasnije dolaze do seizmoloških postaja.
+
+Površinski seizmički valovi šire se jako blizu Zemljine površine. Njihova brzina širenja je puno sporija od prostornih seizmičkih valova, te su samim time puno razorniji za građevine. Dijelimo ih na Love-ove (L) valove i na Rayleigh-ove valove. 
+
+Love-ovi valovi šire se jedino u horizontalnoj ravnini, s lijeva na desno. Oni su jako opasni za temelje građevina, zato što ih presijecaju i naglo oštećuju.
+
+Rayleigh-ovi valovi šire se u obliku elipse, obrnuto od kazaljke na satu. Rayleigh-ovi valovi kreću se najsporije, te zbog toga imaju najrazorniji učinak na građevine. \cite{herak1984} \cite{oluic2015} \cite{jagodnik_potresi}
+
+\section{Magnituda i intenzitet potresa}
+
+Postoje dva načina određivanja jačine potresa. Prvi način je određivanje magnitude potresa, a drugi način je oređivanje intenziteta.
+
+Magnituda potresa je broj koji opisuje veličinu ili količinu oslobođene energije potresa, ona se određuje preko seizmografa, tj. mjerenjem najveće amplitude na seizmogramu. Magnituda se opisuje na Richeterovoj ljestvici. Richterova ljestvica opisana je brojevima od 0 do 10. To je logaritamska ljestvica na kojoj su prikazane magnitude potresa, te opis njihove jačine i njihovih učestalosti. \cite{richterova_vjesnik}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/richterova}
+	\caption{Richterova ljestvica \cite{richterova_slika}}
+	\label{fig:richterova}
+\end{figure}
+
+Intenzitet potresa je subjektivniji način određivanja jakosti potresa. On se određuje na temelju prikupljanja podataka od ljudi koji su svjedočili potresu. Intenzitet potresa izražava se različitim ljestvicama, no najpopularnija je Mercalli-Cancani-Siebergova (MCS) ljestvica. MAC ljestvica ima 12 stupnjeva, a svaki stupanj opisuje određenu jačinu potresa. U Hrvatskoj se MSC ljestvica koristi za brzu procjenu jačine potresa, dok se za detaljnije određivanje koristi Medvedev-Sponheuer-Karinkova (MSK) ljestvica. Najveći problem ovakve ljestvice kod određivanja intenziteta potresa koji se dogodio u nenaseljenom području gdje nema svjedoka potresu - u tom je slučaju potres koji se desio 1. stupnja (nezamjetljiv potres). \cite{richterova_vjesnik}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/MCS_ljestvica}
+	\caption{Skraćeni opis opažanja prema stupnjevima Mercalli-Cancani-Sievergovoj ljestvici \cite{richterova_vjesnik}}
+	\label{fig:mcsljestvica}
+\end{figure}
+
+
+\section{Utjecaj potresa na građevine}
+
+Utjecaj potresa na građevine je široka znanstvena djelatnost koja dugi niz godina zaokuplja inženjere građevine diljem svijeta, a pogotovo u područjima velike seizmičke aktivnosti. Sve veća gustoća naseljenosti i urbanizacija dovode do veće vjerojatnosti  ugrožavanja ljudskih života, te šteta na građevinama, koje neki budući potres može prouzročiti. Potres je prirodna pojava nepredvidivog karaktera, a njegove posljedice, nažalost, mogu biti jako razorne i napraviti velike katastrofe. Također, potres je prirodna pojava čije djelovanje čovjek ne može spriječiti, ali može se ublažiti njegovo djelovanje. Isto tako potrebno je napomenuti da jedan dio šteta na građevinama nastaje kao direktna posljedica dinamičkog odgovora konstrukcije na kretanje tla. Puno štete na građevinama nastaje nakon katastrofe, a to su požari, slijeganje i klizanje tla, lavine, poplave, i tako dalje. Očito je da potresi imaju veliko djelovanje na čovjeka i njegovu okolinu, radi toga se diljem Svijeta ulaže mnogo sredstva u njihovo istraživanje. \cite{hrasnica2005}
+
+Postoji mnogo primjera oštećenih i urušenih građevina od posljedica potresa u prošlosti. Neke od tih potresa i građevina ćemo prokomentirati, te nakon toga napraviti laboratorijska ispitivanja sa njihovim rezultatima mjerenja zapisanim na seizmogramu. \cite{hrasnica2005}
+
+Potres Northridge desio se 17. siječnja 1994. godine u dolini San Fernando u južnoj Kaliforniji, S.A.D. Ovaj potres bio je najdestruktivniji u Kaliforniji od potresa u San Franciscu, 1906. godine. Epicentar potresa bio je u predgrađu Reseda, trajao je 10-20 sekundi, a magnituda je bila 6,7. Štete na građevine bile su jako velike, nije ih bilo puno koje su se srušile u potpunosti. No preko deset tisuća građevina bilo je označeno crvenom bojom što znači da su nesigurne i potrebno ih je srušiti. Sveukupno broj oštećenih i srušenih građevina prešao je broj od 87 400. \cite{britannica_northridge}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/screenshot001}
+	\caption{Oštećena garaža, potres Northridge, U.S.A. 1994. god. \cite{northridge_slika}}
+	\label{fig:screenshot001}
+\end{figure}
+
+\newpage
+
+Veliki Hanshin potres, ili potres u Kobeu, desio se 17. siječnjna 1995. godine u južnom dijelu Hyogoa Prefektura, Japan uključujući regiju Hanshin. Potres je trajao oko 20 sekundi a najveća magnituda bila je 6,9 (7,3 na Richterovoj skali). Epicentar je bio u sjevernom dijelu otoka Awaji, 20 kilometra od grada Kobe, a žarište potresa nalazilo se samo 17 kilometara ispod epicentra. Velik broj građevina bio je srušen, no građevine koje su bile izgrađene po novim normama ostale su čitave i podnjele su dinamička opterećenja. \cite{britannica_kobe} Jedna građevina koja je stradala u potresu nalazi se na slici 2.2. Osnovni razlog rušenja zgrade sa slike 2.2 je nesimetrično postavljanje krute jezgre što je dovelo do velikih torzijskih deformacija cijele zgrade i popuštanja relativno mekih stupova na rubu. \cite{hrasnica2005}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/screenshot004}
+	\caption{Teško oštećena zgrada, potres Kobe, Japan 1995. god., Katsumi Kasahara / Novinar, \cite{kobe_slika}}
+	\label{fig:screenshot004_novo}
+\end{figure}
+
+\newpage
+
+Potres Imperial Valley koji se desio 15. listopada 1979. godine bio je najveći potres u Kaliforniji tog desetljeća. Potres je bio magnitude 6,5 - te mu je epicentar bio u sjevernom Meksiku, a najviše štete na građevinama bilo je u gradu El Centro. Potres se osjetio od grada Las Vegas, pa sve do Tihog oceana. Zgrada Imperial County Service, koja se nalazi na slici 2.3,  jedna je od mnogih koje su nastradale u potresu. Najveći problem armirano-betonske zgrade bili su stupovi koji su se nalazili na istočnoj strani zgrade. Svi stupovi u redu popustili su, te je prvi kat zgrade pao za čak 30 cm (Slika 2.4). \cite{valley_report}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/imperial_valley}
+	\caption{Zgrada Imperial County Service, El Centro, Kalifornia 1979. god. \cite{valley_report}}
+	\label{fig:imperialvalley}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/imperial_valley_szupovi}
+	\caption{Popušteni stupovi na zgradi Imperial County Service, El Centro, Kalifornia 1979. god. \cite{imperial_county_slika}}
+	\label{fig:imperialvalleyszupovi}
+\end{figure}
+
+\newpage
+
+Serija potresa u Cape Mandocinu desila se 25. travnja 1992. godine. Cape Mandecino zadesila su čak tri uzastopna potresa. Prvi i najjači bio je magnitude 7,2 - dok su sljedeća dva potresa bila magnitude 6,5. Sreća je bila da Cape Mandocino nije naseljeno područje, najveća šteta bila je u gradu Fernadel koji je udaljen oko 30 kilometara od epicentra. Nažalost u gradu je bilo oštećeno 32 građevine, od kojih je jedna Viktorijnska kuća (Slika 2.5) koja se pomakla i dimnjak se razdvojio od kuće, prije se dimnjak nalazio na mjestu gdje je siva crta. \cite{cape_mendocino}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/cape_mandecino}
+	\caption{Oštećena Viktorijanska kuća, Fernadel, Kalifornia, 1992. god. \cite{Cape_mandocino_slika}}
+	\label{fig:capemandecino}
+\end{figure}
+
+
+\chapter{\uppercase{Jednad\v{z}ba kretanja}}
+U laboratorijskim ispitivanjima za bolje shvaćanje djelovanja potresa na konstrukcije koristi se jednokatni okvir na kojeg utječe pomicanje podloge (potres). Jednokatni okvir s krutom pločom koji mi promatramo ima samo jedan stupanj slobode, a to je horizontalni pomak ploče. Pošto nas zanima utjecaj promjene mase i širine ploče jednokatnog okvira na njegov dinamički odgovor, jedokatne okvire ćemo ispitivati samo na dinamičku pobudu podloge, bez nanošenja ostalih vanjskih sila. Sukladno tome jednadžbu kretanja dobit ćemo iz drugog Newtonovog zakona kojim ćemo izjednačiti dijagram slobodnog tijela (DST) s dijagramom masa puta akceleracija (DMA). \cite{chopra2007} \cite{dinamika_ZG}
+
+
+Na Slici 3.1 prikazana je skica jednokatnog okvira kojeg upotrebljavamo u pokusu, s lijeve strane okvir je u nedeformiranom stanju, a s desne strane on je u deformiranom stanju.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/screenshot003}
+	\caption{Deformiranje jednokatnog okvira pri pobudi potresom}
+	\label{fig:screenshot004}
+\end{figure}
+
+
+\newpage
+
+Članovi na Slici 3.1 jesu:
+
+m - masa [Kg],
+
+k - krutost [N/m],
+
+u - relativni pomak okvira [m],
+
+$u^t$ - ukupni pomak [m],
+
+$u_g$ - pomak tla (podloge) [m].
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/screenshot002}
+	\caption{DST i DMA dijagrami}
+	\label{fig:screenshot002}
+\end{figure}
+
+Kada izjednačimo DST i DMA dijagram dobivamo:
+
+\begin{equation}\label{Jednadžba 3.1}
+	2f_S + f_D = - f_I,
+\end{equation}
+
+gdje su:
+
+$2f_S$ - elastična sila od zidova jedokatnog okvira [N] (NAPOMENA: U nastavku proračuna $2f_S$ biti će $f_S$ zbog toga što je krutost oba zida dana kao jedna vijednost prije početka pokusa.),
+
+$f_D$ - sila prigušenja [N],
+
+$f_I$ - sila inercije [N].
+
+Elastična sila jednaka je:
+
+\begin{equation}\label{Jednadzba 3.2}
+	f_S = k*u.
+\end{equation}
+
+Sila prigušenja proporcionalna je brzini:
+
+\begin{equation}\label{Jednadzba 3.3}
+	f_D = c*\dot{u},
+\end{equation}
+
+a sila inercije jednaka je:
+
+\begin{equation}\label{Jednadzba 3.4}
+	f_I = m * \ddot{u^t},
+\end{equation}
+
+gdje su:
+
+$c$ - koeficijent viskoznog prigušenja,
+
+$\dot{u}$ - brzina [m/s],
+
+$\ddot{u}$ - ubrzanje [$m/s^2$].
+
+\newpage
+
+Uvrštavanjem jednakosti sila, slijedi:
+
+\begin{equation}\label{Jednadzba 3.5}
+	k*u + c*\dot{u} = - m*\ddot{u}^t,
+\end{equation}
+
+odnosno:
+
+\begin{equation}\label{Jednadzba 3.6}
+	k*u + c*\dot{u} + m*\ddot{u}^t =0.
+\end{equation}
+
+Iz Slike (3.1) vidimo da je ukupni pomak $u^t$ jednak zbroju pomaka tla i relativnog pomaka okvira:
+
+\begin{equation}\label{Jednadzba 3.7}
+	u^t = u_g + u.
+\end{equation}
+
+Deriviranjem jednažbe (\ref{Jednadzba 3.7}) dobivamo:
+
+\begin{equation}\label{Jednadzba 3.8}
+	\dot{u^t} = \dot{u_g} + \dot{u},
+\end{equation}
+
+gdje su:
+
+$\dot{u^t}$ - ukupna brzina [m/s],
+
+$\dot{u_g}$ - brzina tla (podloge) [m/s],
+
+$\dot{u}$ - relativna brzina okvira [m/s],
+
+te iz druge derivacije slijedi:
+
+\begin{equation}\label{Jednadzba 3.9}
+	\ddot{u^t} = \ddot{u_g} + \ddot{u},
+\end{equation}
+
+gdje su:
+
+$\ddot{u^t}$ - ukupno ubrzanje [$m/s^2$],
+
+$\ddot{u_g}$ - ubrzanje tla (podloge) [$m/s^2$],
+
+$\ddot{u}$ - relativno ubrzanje okvira [$m/s^2$].
+
+Uvrštavanjem jednadžbe (\ref{Jednadzba 3.9}) u jednadžbu (\ref{Jednadzba 3.6}) dobivamo:
+
+\begin{equation}\label{Jednadzba 3.10}
+	k*u + c*\dot{u} + m*(\ddot{u_g} + \ddot{u}) = 0,
+\end{equation}
+
+odnosno:
+
+\begin{equation}\label{Jednadzba 3.11}
+	k*u + c*\dot{u} + m*\ddot{u} = - m*\ddot{u_g}.
+\end{equation}
+
+Preko ovih izraza dobili smo jednadžbu kretanja koja nam je potrebna za daljnji proračun.
+
+Sve vrijednosti u jednadžbi smo ili odredili iz dimenzija konstrukcije (masa i krutost zidova), ili ćemo ih dobiti rezultatima mjerenja. Jedina nepoznanica nam je koeficijent viskoznog prigušenja za kojeg sljedi objašnjenje i izvod formule.
+
+\newpage
+
+
+
+Koeficijent viskoznog prigušenja jest:
+
+\begin{equation}\label{Jednadzba 3.12}
+	c = \zeta * \omega *2m,
+\end{equation}
+
+gdje su:
+
+$\zeta$ - prigušenje
+
+$\omega$ - kružna frekvencija [$\frac{rad}{s}$].
+
+Prigušenje ne možemo odrediti analitički, već ga određujemo iz rezultata koje dobivamo iz laboratorijskog ispitivanja slobodnih oscilacija okvira. Ono zapravo opisuje razliku između dvaju uzastopnih brijegova amplitude.
+
+Stoga, izraz za prigušenje glasi:
+
+\begin{equation}\label{Jednadzba 3.13}
+	\zeta = \frac{1}{2\pi} * ln\frac{u_i}{u_{i+j}},
+\end{equation}
+
+gdje su:
+
+$u_i$, $u_{i+j}$ - uzastopne amplitude valova.
+
+Kružna frekvencija:
+
+\begin{equation}\label{Jednadzba 3.14}
+	\omega = 2 * \pi * f
+\end{equation}
+
+\begin{center}
+	ili
+\end{center}
+
+\begin{equation}\label{Jednadzba 3.15}
+	\omega = \sqrt{\frac{k}{m}},
+\end{equation}
+
+gdje je:
+
+$f$ - vlastita frekvencija [$s^{-1}$].
+
+Vlastitu frekvenciju dobivamo kao:
+
+\begin{equation}\label{Jednadzba 3.16}
+	f = \frac{1}{T},
+\end{equation}
+
+gdje je:
+
+$T$ - period [s].
+
+Period T možemo dobiti iz vremenske razlike dvaju susjednih brijegova amplitude iz rezultata ispitivanja slobodnih oscilacija ili uvrštavanjem jednažbe (\ref{Jednadzba 3.16}) u jednadžbu (\ref{Jednadzba 3.14}), te dobivamo:
+
+\begin{equation}\label{Jednadzba 3.17}
+	T = \frac{2\pi}{\omega}.
+\end{equation}
+
+\cite{chopra2007} \cite{dinamika_ZG}
+
+
+
+\chapter{\uppercase{Opis opreme i jednokatnog okvira}}
+
+\section{Laboratorijska oprema}
+
+\subsection{Opti\v cki mjerni sustav GOM mbH PONTOS 3D 4M}
+
+Optički mjerni sustav sastoji se od mjerne glave s dvije kamere, kablova, nosača, kalibracijskog objekta, para leća, laserskog pokazivača, kofera, LED osvjetljenja, foto ćelija.
+
+Sustav kamera koristi se za 3D beskontaktno optičko mjerenje pomaka i deformacija. Prije početka snimanja pokusa, potrebno je napraviti kalibraciju kamera, odnosno ovisno o veličini objekta koji se snima potrebno ih je namjestiti na određenu udaljenost i kut snimanja. Kamere snimaju cijeli tijek pokusa. Na temelju praćenja objekta koje snimaju, u našem slučaju jednokatnog okvira, kao rezultat daju podatke o položaju točaka na površini jednokatnog okvira. Točke koje se prate su zapravo crno-bijele referentne točke koje se lijepe na povšinu jednokatnog okvira i podloge kako bi ih kamere mogle pratiti u svim fotografijama koje one snime. Obzirom na to da na model stavljamo referentne točke, prva fotografija u nizu naziva se referentna fotografija, a nakon nje sljedi niz fotografija kojima određujemo rezultate mjerenja.
+
+Tehničke karakteristike:
+
+- mogućnost snimanja do 168 fps rezolucijom od 2400 x 1728 piksela, te do 1300 fps rezolucijom od 2400 x 168 piksela,
+
+- jedan par leća žarišne dužine 20 mm pogodan za mjerne volumene od 125 x 90 $mm^2$ do 2150 x 1600 $mm^2$,
+
+- kalibracijski objekt za snimanje mjernog volumena od 350 x 260 $m^2$ do 500 x 370 $mm^2$. \cite{oprema}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Slike/kamere}
+	\caption{Optički mjerni sustav GOM mbH PONTOS 3D 4M}
+	\label{fig:kamere}
+\end{figure}
+
+\newpage
+
+\subsection{Sustav od dvije dvoosne potresne platforme Quanser STI-III}
+
+Sustav od dvije dvoosne potresne platforme Quanser STI-III pokretane elektromagnetskim motorom. Sustav se sastoji od kontrolne \textit{hardware} ploče sa potrebnim \textit{software-om}, te od podložne ploče za dvoosne platforme.
+
+Sustav služi za modelska ispitivanja na utjecaj dinamičke pobude. Dvije platforme se mogu koristiti odvojeno i neovisne su jedna o drugoj. Moguće je izvoditi dva ispitivanja istovremeno, ali i zajedno na način da model bude oslonjen na obje platforme. Pri korištenju platformi istovremeno dopuštena je veća maksimalna masa, a pobuda koju one proizvode može biti jednaka (sinkroni rad) ili različita (asinkroni rad). \cite{oprema}
+
+Tehničke karakteristike:
+
+- tlocrtne dimenzije svake platforme 625 x 625 $mm^2$,
+
+- hod svake platforme u svakom od dva smjera je 15 cm, a raspon radnih frekvencija između 0 i 20 Hz,
+
+- svaka platforma uz maksimalni teret od 130 kg može proizvesti ubrzanje od 1g u svakom od dva smjera,
+
+- svaka platforma bez ikakvog tereta može proizvesti ubrzanje od 2,8g u x smjeru i 4,5g u y smjeru,
+
+- osna udaljenost platformi može biti od 1 m do 2,5 m. \cite{oprema}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Slike/potresni}
+	\caption{Potresna platforma}
+	\label{fig:potresni}
+\end{figure}
+
+\newpage
+
+\section{Jednokatni okvir}
+
+Za izvedbu laboratorijskih ispitivanja korišten je jednokatni okvir. On se sastoje od dvije krute ploče, dvije metalne ploče (zidovi), vijaka, te podložnih pločica koje se nalaze između krutih i metalnih ploča (Slika 4.4). 
+
+Tema završnog rada je promjena mase i širine jednokatnog okvira, no s obzirom da promjena širine jednokatnog okvira nema nikakvog utjecaja na dinamičku pobudu, okvir smo ostavili istih dimenzija. To možemo zaključiti iz jednadžbe (\ref{Jednadzba 3.11}) gdje vidimo da u njoj nema nikakvih članova sa dimenzijama konstrukcije. To znači umjesto da smo masu okvira promijenili promjenom dimenzija krute ploče (Slika 4.3), nju čemo promjeniti dodavanjem dodatne mase na okvir istih dimenzija. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Slike/2_okvira_skica}
+	\caption{Skica jednokatnih okvira različitih dimenzija}
+	\label{fig:2okviraskica}
+\end{figure}
+
+
+Ukupna masa okvira iznosi 1483 grama, no s obzirom da je donja kruta ploča povezana sa potresnom platformom nju možemo zanimariti, isto kao i ostatak donje polovice okvira koji smatramo da ne oscilira. Kada to uzmemo u obzir ukupna masa okvira koja nam je potrebna za daljnji proračun iznosi 741,5 grama. 
+
+S obzirom da s laboratorijskim ispitivanjima želimo saznati kako promjena mase okvira utječe na dinamičku pobudu, drugom okviru dodali smo dva utega od kojih svaki ima težinu 1 N, tj. 101,97 grama. Dakle, ukupna masa drugog okvira iznosi 945,44 grama.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Slike/okvir_skica}
+	\caption{Skica jednokatnog okvira i njegovih dijelova}
+	\label{fig:okvirskica}
+\end{figure}
+
+
+
+
+\begin{table}[H]
+	\label{table1}
+	\begin{center}
+		\begin{tabular}{|l|c|c|r|}
+			\hline
+			Element & Komad & Masa [g] & Ukupna masa [g]\\
+			\hline
+			Kruta ploča & 2 & 467,8 & 935,6\\
+			\hline
+			Metalna ploča & 2 & 231,5 & 463\\
+			\hline
+			Podložna pločica & 4 & 14,8 & 59,2 \\
+			\hline
+			Vijak & 12 & 2,1 & 25,2\\
+			\hline
+			\multicolumn{3}{|l|}{Ukupna masa okvira} & 1483\\
+			\hline
+			\multicolumn{3}{|l|}{Ukupna masa gornjeg dijela okvira} & 741,5\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Masa okvira 1(bez dodane mase)}
+\end{table}
+
+
+\begin{table}[H]
+	\label{table2}
+	\begin{center}
+		\begin{tabular}{|l|c|c|r|}
+			\hline
+			Element & Komad & Masa [g] & Ukupna masa [g]\\
+			\hline
+			Kruta ploča & 2 & 467,8 & 935,6\\
+			\hline
+			Metalna ploča & 2 & 231,5 & 463\\
+			\hline
+			Podložna pločica & 4 & 14,8 & 59,2 \\
+			\hline
+			Vijak & 12 & 2,1 & 25,2\\
+			\hline
+			Uteg & 2 & 101,97 & 203,94\\
+			\hline
+			\multicolumn{3}{|l|}{Ukupna masa okvira} & 1686,94\\
+			\hline
+			\multicolumn{3}{|l|}{Ukupna masa gornjeg dijela okvira} & 945,44\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Masa okvira 2 (sa dodanom masom)}
+\end{table}
+
+\newpage
+
+Prilikom izvođenja laboratorijskih ispitivanja korištena su dva jednokatna okvira (Slika 4.5). Okvire smo istovremeno ispitivali na istoj potresnoj platformi kako bismo vidjeli odgovore jednokatnih okvira na istu potresnu pobudu. Okvire smo ispitivali istovremeno kako bi smo dobili točnije rezultate ispitivanja, (ako bi smo ih ispitivali odvojeno ne bismo nužno dobili istu pobudu podloge).
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Slike/okviri}
+	\caption{Jednokatni okviri na potresnom stolu, gledano s desna na lijevo; okvri 1, okvir 2}
+	\label{fig:okviri}
+\end{figure}
+
+
+Okvir 1 (Slika 4.5, desno) je bez dodane mase, njega ćemo usporediti sa okvirom 2 na kojem je dodana masa od 2 N (Slika 4.5, lijevo), te ćemo vidjeti kako promjena mase utječe na dinamički odgovor konstrukcije na pobudu podloge.
+
+\chapter{\uppercase{Laboratorijska ispitivanja i rezultati}}
+
+Laboratorijska ispitivanja provodili smo na Građevinskom fakultetu Sveučilišta u Rijeci u Laboratoriju za konstrukcije. Za ispitivanja smo koristili potresnu platformu (opisano u poglavlju 4.1.2), optički mjerni sustav GOM (opisano u poglavlju 4.1.1), te dva jednokatna okvira (opisano u poglavlju 4.2), a za obradu optičkih podataka koristio se program ARAMIS professional.
+
+Ukupno je provedeno pet laboratorijskih ispitivanja. Koristila su se dva jednokatna okvira koji su se ispitivali istovremeno (Slika 4.5). Za oba okvira nanosile su se iste funkcije pomaka. 
+
+U prvom ispitivanju promatrali smo slobodne oscilacije okvira. Potresni stol bio je u stanju mirovanja, a okvire smo pomakli rukom, te simulirali slobodne oscilacije. U drugom ispitivanju koristili smo se potresnim zapisom Northbridge. Za treće ispitivanje koristi smo potresni zapis Kobe, u četvrtom ispitivanju potresni zapis El Centro, a za peto ispitivanje koristili smo potresni zapis Cape Mandocio. Informacije o ovim potresnima opisane su u poglavlju 2.5.
+
+\section{Rezultati ispitivanja}
+
+\section{Ispitivanje slobodnih oscilacija}
+
+\subsection{Okvir bez dodane mase}
+
+Uz dobivenu krutost zidova koja iznosi 541,3 N/m i mase (Tablica 4.1) možemo izračunati kružnu frekvenciju $\omega$, period $T$, te vlastitu frekvenciju $f$.
+
+Uvrštavanjem krutosti i mase u jednadžbu (\ref{Jednadzba 3.15}) kružna frekvencija iznosi:
+
+\begin{equation}\label{Jednadzba 5.1}
+	\omega = \sqrt{\frac{541,3}{0,7415}} = 27,02 \hspace{0.15cm} rad/s.
+\end{equation}
+
+Zatim uvrštavanjem kružne frekvencije u jednadžbu (\ref{Jednadzba 3.17}) dobivamo period $T$:
+
+\begin{equation}\label{Jednadzba 5.2}
+	T = \frac{2\pi}{27,02} = 0,23 \hspace{0.15cm} s.
+\end{equation}
+
+A vlastitu frekvenciju dobivamo uvrštavanjem perioda $T$ u jednadžbu (\ref{Jednadzba 3.16}):
+
+\begin{equation}\label{Jednadzba 5.3}
+	f = \frac{1}{0,23} = 4,35 \hspace{0.15cm} s^{-1}.
+\end{equation}
+
+Kako bismo izračunali prigušenje okvira potrebni su nam rezultati mjerenja prikazani na slici 5.1. Iz vremenske razlike između dva susjedna brijega ponovo možemo dobiti period $T$, te slijedi daljnji analitički proračun.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/slobodne_oscilacije_o1}
+	\caption{Grafički prikaz slobodnih oscilacija okvira 1}
+	\label{fig:slobodneoscilacijeo1}
+\end{figure}
+
+Vrijednosti vremena i pomaka izvući ćemo iz zapisa koji smo dobili obradom podataka (Tablica 5.1).
+
+\begin{table}[H]
+	\label{table3}
+	\begin{center}
+		\begin{tabular}{|l|c|r|}
+			\hline
+			Točka & Vrijeme [s] & Pomak [mm]\\
+			\hline
+			1 & 5,076976 & 17,02437\\
+			\hline
+			2 & 5,316976 & 16,86042\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Vrijeme i pomak okvira 1}
+\end{table}
+
+Iz razlike u vremenima točke 1 i točke 2 (Tablica 5.1) dobivamo period T:
+
+\begin{equation}\label{Jednadzba 5.4}
+	T = 0,24 \hspace{0.15cm} s.
+\end{equation}
+
+Zatim uvrštavanjem perioda T u jednadžbu (\ref{Jednadzba 3.16}) dobivamo vlastitku frekvenciju $f$ koja iznosi:
+
+\begin{equation}\label{Jednadzba 5.5}
+	f = \frac{1}{0,24} = 4,166\dot{6} \hspace{0.15cm} s^{-1}
+\end{equation}
+
+Sa dobivenom vlastitom frekvencijom preko jednadžbe (\ref{Jednadzba 3.14}) dobivamo kružnu frekvenciju $\omega$:
+
+\begin{equation}\label{Jednadzba 5.6}
+	\omega = 2 * \pi * 4,166\dot{6} = 26,18 \hspace{0.15cm} rad/s
+\end{equation}
+
+Iz jednadžbe (\ref{Jednadzba 3.15}) možemo dobiti ćemu je jednaka krutos k:
+
+\begin{equation}\label{Jednadzba 5.7}
+	k = \omega^2 * m,
+\end{equation}
+
+te je krutost k jednaka:
+
+\begin{equation}\label{Jednadzba 5.8}
+	k = 26,18^2 * 0,7415 = 508,22 \hspace{0.15cm} N/m
+\end{equation}
+
+Krutost koju smo dobili iz prvog ispitivanja manja jeza 6,5$\%$ od prethodno zadane krutosti.
+
+Nakon što smo okvir pomaknuli rukom on postepeno počinje usporavati i smirivati se. To je rezultat prigušenja kojeg svaka konstrukcija ima, te se njegova vrijednost mijenja ovisno o karakteristikama konstrukcije. Sljedeće što ćemo napraviti je izračunati prigušenje preko dijagrama na slici (5.1), te uz pomoć dvije uzastopne maksimalne vrijednosti amplituda koje su zapisane u tablice (5.1).
+
+Pomoću jednažbe (\ref{Jednadzba 3.13}) dobivamo prigušenje $\zeta$:
+
+\begin{equation}\label{Jednadzba 5.9}
+	\zeta = \frac{1}{2\pi} * ln\frac{17,02437}{16,86042} = 0,00154.
+\end{equation}
+
+Na kraju pomoću jednadžbe (\ref{Jednadzba 3.12}) možemo dobiti koeficijent viskoznog prigušenja $c$ za okvir 1:
+
+\begin{equation}\label{Jednadzba 5.10}
+	c = 0,00154 * 26,18 * 2 * 0,7415 = 0,06.
+\end{equation}
+
+\newpage
+
+\subsection{Okvir sa dodanom masom}
+
+Isto kao i za okvir 1 uz krutost i masu iz tabilice 4.2 možemo izračunati kružnu frekvenciju $\zeta$, period T i vlastitu frekvenciju f.
+
+Uvrštavanjem krutosti $k$ i mase $m$ u jedadžbu (\ref{Jednadzba 3.15}) dobivamo kružnu frekvenciju:
+
+\begin{equation}\label{Jednadzba 5.11}
+	\omega = \sqrt{\frac{541,3}{0,94544}} =  23,93 \hspace{0.15cm} rad/s.
+\end{equation}
+
+Uvrštavanjem kružne frevencije $\zeta$ u jednadžbu (\ref{Jednadzba 3.17}) dobivamo period T:
+
+\begin{equation}\label{Jednadzba 5.12}
+	T = \frac{2\pi}{23,93} = 0,26 \hspace{0.15cm} s.
+\end{equation}
+
+Te na kraju vlastitu frekvenciju $f$ dobivamo uvrštavanjem perioda T u jednadžbu (\ref{Jednadzba 3.16}):
+
+\begin{equation}\label{Jednadzba 5.13}
+	f = \frac{1}{0,26} = 3,85 \hspace{0.15cm} s^{-1}
+\end{equation}
+
+Za izračun perioda T, vlastite frekvencije f, kružne frekvencije $\omega$, krutosti k, prigušenja $\zeta$, te koeficijenta viskoznog prigušenja, potrebni su nam rezultati mjerenja. Rezultati mjerenja prikazani su na slici (5.2), a maksimalne vrijednosti dviju amplituda, te njihov razmak u vremenu prikazani su u tablici (5.2).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/slobodne_oscilacije_o2}
+	\caption{Grafički prikaz slobodnih oscilacija okvir 2}
+	\label{fig:slobodneoscilacijeo2}
+\end{figure}
+
+\begin{table}[H]
+	\label{table4}
+	\begin{center}
+		\begin{tabular}{|l|c|r|}
+			\hline
+			Točka & Vrijeme [s] & Pomak [mm]\\
+			\hline
+			1 & 6.109976 & 17.38614 \\
+			\hline
+			2 & 6.389976 & 17.09093 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Vrijeme i pomak okvira 2}
+\end{table}
+
+Iz razlike u vremenu točke 1 i točke 2 (Tablica 5.2) period T iznosi:
+
+\begin{equation}\label{Jednadzba 5.14}
+	T = 0,28 \hspace{0.15cm} s.
+\end{equation}
+
+Zatim uvrštavanjem perioda T u jednadžbu (\ref{Jednadzba 3.16}) dobivamo vlastitku frekvenciju f:
+
+\begin{equation}\label{Jednadzba 5.15}
+	f = \frac{1}{0,24} = 3,57 \hspace{0.15cm} s^{-1}
+\end{equation}
+
+Sa dobivenom vlastitom frekvencijom iz jednadžbe (\ref{Jednadzba 3.14}) dobivamo kružnu frekvenciju $\omega$:
+
+\begin{equation}\label{Jednadzba 5.16}
+	\omega = 2 * \pi * 3,57 = 22,43 \hspace{0.15cm} rad/s
+\end{equation}
+
+Iz jednadžbe (\ref{Jednadzba 5.7}) možemo dobiti krutos k:
+
+\begin{equation}\label{Jednadzba 5.17}
+	k = 22,43^2 * 0,94544 = 475,67 \hspace{0.15cm} N/m
+\end{equation}
+
+Prigušenje $\zeta$ dobivamo uvrštavanjem vrijednosti pomaka iz tablice (5.2) u jednadžbu (\ref{Jednadzba 3.13}):
+
+\begin{equation}\label{Jednadzba 5.18}
+	\zeta = \frac{1}{2\pi} * ln\frac{17,38614}{17,09093} = 0,0027.
+\end{equation}
+
+Te na kraju iz jednadžbe (\ref{Jednadzba 3.12}) možemo dobiti koeficijent viskoznog prigušenja c za okvir 2:
+
+\begin{equation}\label{Jednadzba 5.19}
+	c = 0,0027 * 22,43 * 2 * 0,94544 = 0,11.
+\end{equation}
+
+Iz rezultata možemo primjetiti da je period okvira 2 veći za 14,3$\%$ od okvira perioda okvira 1. S druge strane vlastita frekvencija okvira 2 manja je za 16,7$\%$ od vlastite frekvencije okvira 1. Kružna frekvencija okvira 2 manja je za 16,7$\%$ od kružne frekvencije okvira 1. Krutost okvira 2 manja je za 6,8$\%$ od krutosti okvira 1. Kod usporedbe prigušenja možemo primjetiti da je prigušenje okvira 2 za 57,04$\%$ veće od prigušenja okvira 1. Te na kraju koeficijent prigušenja okvira 2 veći je za 54,5$\%$ od koeficijenta prigušenja okvira 1.
+
+\section{Ispitivanja potresnih zapisa i usporedba rezultata}
+
+\subsection{Potresni zapis Northridge}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/northridge_graf}
+	\caption{Grafički prikaz oscilacija okvira 1 i okvira 2 za potresni zapis Northridge}
+	\label{fig:northridgegraf}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/northridge_0-10}
+	\caption{Grafički prikaz oscilacija okvira 1 i okvira 2 za potresni zapis Northridge u vremenu od 2 do 7 sekundi}
+	\label{fig:northridge0-10}
+\end{figure}
+
+
+Iz slika (5.3 i 5.4) možemo vidjeti da okvir 2 (sa dodanom masom) ima veću amplitudu od okvira 1 (bez dodane mase), što je i očekivano iz rezultata koje smo dobili analitiči u poglavlju 5.2. Na početku i na kraju vide se velike razlike u oscilacijama, dok su u sredini oscilacije prilično jednake. U intervalu od 2 do 7 sekundi (Slika 5.4) možemo uočiti najveće pokame okvira 1 koje iznose 39,2306 mm, dok su maksimalni pomaci okvira 2 jednaki 58,312 mm, što je tazlika za čak 19,081 mm.
+
+\subsection{Potresni zapis Kobe}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/kobe_graf}
+	\caption{Grafički prikaz oscilacija okvira 1 i okvira 2 za potresni zapis Kobe}
+	\label{fig:kobegraf}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/kobe_30-40}
+	\caption{Grafički prikaz oscilacija okvira 1 i okvira 2 za potresni zapis Kobe u vremenu od 30 do 33 sekunde}
+	\label{fig:kobe30-40}
+\end{figure}
+
+
+Iz slike (5.6) možemo vidjeti kako oscilacije okvira 2 veće od oscilacija okvira 1, isto kao i kod porestnog zapisa Northridge. U intervalima od 30 do 33 sekunde (Slika 5.6) najveći pomaci okira 1 iznose 13,428 mm, a najveći pomaci okvira 2 iznose 14,828 mm što je razlika za samo 1,4 mm. Isto tako možemo primjetiti da su oscilacije okvira 1 jako malene u odnosu na bazu, s obzirom na to reklo bi se da potres Kobe nije bio toliko razoran za neke građevine, ali iz slike (5.5) možemo vidjeti da je potres trajao jako dugo vremena. Te zaključujemo da je potres bio razoran zbog dugog trajanja. 
+
+
+\subsection{Potresni zapis El Centro}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/el_centro_graf}
+	\caption{Grafički prikaz oscilacija okvira 1 i okvira 2 za potresni zapis El Centro}
+	\label{fig:elcentrograf}
+\end{figure}
+
+Za razliku od prijašnjih ispitivanja u ovom ispitivanju možemo primjetiti kako su oscilacije okvira 1 veće od oscilacija okvira 2 (Slika 5.7). To pogotovo možemo primjetiti u intervalu od 5-10 sekundi gdje je najveći pomak okvira 1 jednak 43,15 mm, a najveći pomak okvira 2 jednak je 36,86 mm, što je razlika od 6,29 mm.
+
+\newpage
+
+\subsection{Cape Mandocino}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Slike/cape_mandocino_graf}
+	\caption{Grafički prikaz oscilacija okvira 1 i okvira 2 za potresni zapis Cape Mandocino}
+	\label{fig:capemandocinograf}
+\end{figure}
+
+Kod potresnog zapisa Cape Mandocino možemo primjetiti da su oscilacije okvira 1 i okvira 2 poprilično jednake (Slika 5.9). Na primjer u intervalu od 5 do 10 sekundi možemo primjetiti da su u nekim trenucima pomaci okvira 1 veći od pomaka okvira 2 i obrnuto. Na primjer u intervalu od 2 do 4 sekunde, najveći pomaci okvira 1 su 46,7074 mm - dok su najveći pomaci okvira 2 jednaki 47,8374 mm što je razlika od samo 1,13 mm.
+
+\chapter{\uppercase{ZakljuČak}}
+
+Ovim završnim radom su analitički, numeriči i eksperimentalno analizirani modeli jednokatnog okvira. Analizirana je bila promjena mase jednokatnog modela na dinamički odgovor na pobudu podloge, dok promjena širine ploče nije što je objašnjeno u poglavlju 4.2. Sva laboratoriska ispitivanja provedena su na Građevinskom fakultetu u Rijeci u Laboratoriju za konstrukcije. Ispitivanja su provedena na potresnom stolu, snimanje uz pomoč optičkih kamera, a obrada podataka uz pomoć programskog paketa Aramis.
+
+Ukupno je bilo provedeno pet ispitivanja iz kojih smo dobili podatke o pomacima okvira. Prvo ispitivanje bile su slobodne oscilacije iz kojih smo dobili rezultate o svojstvima pojedinog okvira. Kako bi došli do podataka analitički bila nam je potrebna masa i krutost oba okvira, te vrijednosti su bile određene prije početka ispitivanja. Podaci koji su dobiveni analitiči i eksperimentalno razlikovali su se, no jasno je da su podaci dobiveni eksperimentalno točniji.
+
+Nakon usporedbe i analize rezultata koje smo dobili možemo primjetiti da se u većini slučajeva pomaci okvira sa većom masom ne razlikuju od okvira sa manjom masom. No to ne more značiti da će tako biti i u stvarnosti. Moguće je da u ispitivanjima nismo pogodili frekvencije oba okvira, te su zato pomaci bili od prilike jednaki u svim ispitivanjima. Ali ipak proračunom možemo uočiti razlike između okvira. Na primjer period okvira bez dodane mase bio je 0,23 sekunde, dok je period okvira sa dodanom masom bio 0,28 sekunde. To znači da okvir sa manjom masom brže oscilira od okvira sa većom. No, povećavanjem mase povećava se i koeficijent viskoznog prigušenja. Čim je on veći konstrukcija prije dolazi u mirovanje i sigurnija je na potresnu pobudu. Isto tako možemo vidjeti da se povećavanjem mase krutost konstrukcije smanjuje, što je loša stvar. Čim konstrukcija ima veću krutost njoj se spriječavaju njene oscilacije i to bi u stvarnosti moglo biti jako loše.
+
+Smatram da je za ovakve vrste ispitivanja bolje napraviti programski kod preko kojeg bi mogli izmjenjivati sve podatke o konstrukciji, te mislim da bi to bio dobar nastavak na ovu temu.
+
+
+\cleardoublepage\phantomsection
+
+%\printbibliography
+\vspace{\baselineskip}
+%\label{Bibliography}
+\renewcommand{\bibname}{\uppercase{Literatura}}
+\addcontentsline{toc}{chapter}{\textbf{Literatura}}
+\bibliographystyle{unsrtnat-GFRI}
+\bibliography{literatura1}
+\bibliographystyle{vancouver}
+
+\end{document}
